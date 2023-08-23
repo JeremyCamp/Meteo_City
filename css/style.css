@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    background: linear-gradient(0deg, #08AEEA 14%, #ffffff 100%);
+    background-repeat: no-repeat;
+}
+
+.blocApp {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+}
+
+.titleBackground {
+    position: absolute;
+    z-index: 0;
+    height: 60px;
+    width: 280px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: grey;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 20px;
+}
+
+form {
+    margin-top: 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 250px;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: none;
+    box-shadow: grey 1px 1px 10px;
+    font-size: 20px;
+    font-weight: 200;
+    color: grey;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: grey;
+    font-size: 20px;
+}
+
+button {
+    height: 40%;
+    width: 130px;
+    opacity: 0.7;
+    color: rgb(51, 51, 51);
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: grey 1px 1px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.blocMeteo {
+    height: 500px;
+    margin-top: 20px;
+}
+
+
+
+.meteoInfo {
+    height: 65%;
+    color: white;
+}
+
+.meteoInfo i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.meteoInfo h2 {
+    height: 20%;
+    font-size: 50px;
+    text-align: center;
+    color: grey;
+    text-shadow: white 1px 1px 10px;
+}
+
+.meteoInfo p {
+    margin-top: 20px;
+    height: 10%;
+    font-size: 35px;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    color: grey;
+    text-shadow: white 1px 1px 10px;
+}
+
+.blocInfo {
+    height: 35%;
+}
+
+.iconMeteo {
+    margin: 30px 0;
+    font-size: 130px;
+    text-shadow: white 1px 1px 10px;
+}
+
+.precisionsMeteo {
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    width: 250px;
+    height: 170px;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+.precisionsMeteo i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 60px;
+}
+
+.precisionsMeteo p {
+   font-size: 25px; 
+   color: grey;
+   text-shadow: white 1px 1px 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.identite {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.identite p {
+    font-size:  25px;
+    text-shadow: white 1px 1px 10px;
+}
+
+.identite span {
+    font-size: 30px;
+    color: white;
+    text-shadow: black 1px 1px 10px;
+}
+
+
+.links {
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links i {
+    font-size: 40px;
+    text-shadow: 1px 1px 10px white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    form {
+        flex-direction: row;
+        width: 500px;
+    }
+    
+    input {
+        border-radius: 6px 0px 0px 6px;
+        width: 330px;
+        height: 45px;
+    }
+
+    button {
+        border-radius: 0px 6px 6px 0px;
+        background-color: #08AEEA;
+        color: #ffffff;
+        text-shadow: 1px 1px 5px black;
+        width: 220px;
+        height: 45px;
+    }
+
+    .blocMeteo {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        justify-content: space-between;
+    }
+
+    .meteoInfo {
+        padding-top: 45px;
+    }
+
+    .meteoInfo, .blocInfo {
+        width: 225px;
+        height: 100%;
+    }
+
+    .precisionsMeteo {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 430px;
+    }
+
+    .precisionsMeteo i {
+        font-size: 85px;
+        margin-bottom: 15px;
+    }
+
+    .precisionsMeteo p {
+        font-size: 30px;
+    }
+
+    .humidity, .wind {
+        height: 30%;
+    }
+}  
+
+@media screen and (min-width: 1024px) {
+
+    .blocTitle {
+        width: 100%;
+        height: 80px;
+    }
+    .titleBackground {
+        width: 100%;
+        padding-top: 13px;
+    }
+
+    form {
+        width: 600px;
+        flex-direction: row;
+    }
+
+    input {
+        width: 75%;
+        height: 45px;
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    button {
+        width: 25%;
+        height: 45px;
+        border-radius: 0px 6px 6px 0px;
+        background-color: #08AEEA;
+        color: #ffffff;
+        text-shadow: 1px 1px 10px black;
+    }
+
+    .blocMeteo {
+        display: flex;
+        flex-direction: row;
+        width: 600px;
+        justify-content: space-between;
+    }
+
+    .meteoInfo {
+        padding-top: 60px;
+        height: 100%;
+    }
+
+    .blocInfo {
+        height: 90%;
+    }
+
+    .precisionsMeteo {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .precisionsMeteo i {
+        font-size: 90px;
+        margin-bottom: 10px;
+    }
+
+    .precisionsMeteo p {
+        font-size: 30px;
+    }
+
+    .footer {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .identite {
+        margin-bottom: 20px;
+    }
+
+    .links i {
+        font-size: 50px;
+    }
+
+}
